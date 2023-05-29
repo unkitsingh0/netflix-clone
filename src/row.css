@@ -1,0 +1,37 @@
+* {
+  /* background-color: black; */
+  color: white;
+}
+.row {
+  margin-left: 1.25rem;
+}
+.row-poster {
+  /* This is for container */
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row-poster::-webkit-scrollbar {
+  display: none;
+}
+.row-posters {
+  /* This is for image  */
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+.row-posters:hover {
+  transform: scale(1.08);
+}
+
+.row-posterLarge {
+  max-height: 250px;
+}
+
+.row-posterLarge:hover {
+  transform: scale(1.1);
+}
